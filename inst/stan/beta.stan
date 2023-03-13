@@ -1,4 +1,4 @@
-#include /chunks/common_functions.stan
+#include /include/common_functions.stan
 
 data {
   // data
@@ -33,7 +33,7 @@ data {
   int prior_type_r;
 }
 parameters{
-  real<lower = 0> mu;
+  real<lower = 0, upper = 1> mu;
   real<lower = 0> sigma2;
   real<lower = coefs_lb(bounds_type_d[1], bounds_d[1]), upper = coefs_ub(bounds_type_d[2], bounds_d[2])> delta[is_d];
   real<lower = coefs_lb(bounds_type_r[1], bounds_r[1]), upper = coefs_ub(bounds_type_r[2], bounds_r[2])> rho[is_r];
@@ -62,10 +62,10 @@ transformed parameters {
     mu_i[1] = mu - 0.5 * fixed_d[1] * pooled_sigma;
     mu_i[2] = mu + 0.5 * fixed_d[1] * pooled_sigma;
   }
-  
+
   for(i in 1:2){
-    alpha_i[i] = pow(mu_i[i], 2) / pow(sigma_i[i], 2);
-    beta_i[i]  = mu_i[i] / pow(sigma_i[i], 2);
+    alpha_i[i] = - (mu_i[i] * ( pow(mu_i[i], 2) - mu_i[i] +  pow(sigma_i[i], 2) )) /  pow(sigma_i[i], 2);
+    beta_i[i]  = ( (mu_i[i] - 1) * ( pow(mu_i[i], 2) - mu_i[i] +  pow(sigma_i[i], 2) )) /  pow(sigma_i[i], 2);
   }
 }
 model {
@@ -83,8 +83,8 @@ model {
 
   // likelihood of the data
   if(is_ss == 0){
-    target += gamma_lpdf(x1 | alpha_i[1], beta_i[1]);
-    target += gamma_lpdf(x2 | alpha_i[2], beta_i[2]);
+    target += beta_lpdf(x1 | alpha_i[1], beta_i[1]);
+    target += beta_lpdf(x2 | alpha_i[2], beta_i[2]);
   }else{
     reject("Fitting models with t likelihood and summary statistics is not possible :(.");
   }
