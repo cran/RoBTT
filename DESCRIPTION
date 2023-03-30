@@ -1,6 +1,6 @@
 Package: RoBTT
 Title: Robust Bayesian T-Test
-Version: 1.0.2
+Version: 1.0.3
 Maintainer: František Bartoš <f.bartos96@gmail.com>
 Authors@R: c( 
     person("František", "Bartoš",     role = c("aut", "cre"),
@@ -37,8 +37,8 @@ Imports: rstan(>= 2.21.2), rstantools(>= 1.5.0), RcppParallel (>=
 Suggests: parallel, testthat, vdiffr, knitr, rmarkdown, covr
 RdMacros: Rdpack
 VignetteBuilder: knitr
-Packaged: 2023-03-29 16:43:23 UTC; fbart
+Packaged: 2023-03-30 08:59:08 UTC; fbart
 Author: František Bartoš [aut, cre] (<https://orcid.org/0000-0002-0018-5573>),
   Maximilian Maier [aut] (<https://orcid.org/0000-0002-9873-6096>)
 Repository: CRAN
-Date/Publication: 2023-03-30 08:20:02 UTC
+Date/Publication: 2023-03-30 10:40:08 UTC

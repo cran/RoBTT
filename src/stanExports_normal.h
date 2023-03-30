@@ -75,197 +75,213 @@ using stan::math::pow;
 stan::math::profile_map profiles__;
 static int current_statement__= 0;
 static const std::vector<string> locations_array__ = {" (found before start of program)",
-                                                      " (in 'string', line 180, column 2 to column 10)",
-                                                      " (in 'string', line 181, column 2 to column 25)",
-                                                      " (in 'string', line 182, column 2 to column 117)",
-                                                      " (in 'string', line 183, column 2 to column 115)",
-                                                      " (in 'string', line 186, column 2 to column 20)",
-                                                      " (in 'string', line 187, column 2 to column 20)",
-                                                      " (in 'string', line 188, column 2 to column 17)",
-                                                      " (in 'string', line 195, column 4 to column 66)",
-                                                      " (in 'string', line 196, column 4 to column 66)",
-                                                      " (in 'string', line 197, column 4 to column 62)",
-                                                      " (in 'string', line 194, column 7 to line 198, column 3)",
-                                                      " (in 'string', line 191, column 4 to column 62)",
-                                                      " (in 'string', line 192, column 4 to column 62)",
-                                                      " (in 'string', line 193, column 4 to column 62)",
-                                                      " (in 'string', line 190, column 15 to line 194, column 3)",
-                                                      " (in 'string', line 190, column 2 to line 198, column 3)",
-                                                      " (in 'string', line 203, column 4 to column 51)",
-                                                      " (in 'string', line 204, column 4 to column 51)",
-                                                      " (in 'string', line 202, column 7 to line 205, column 3)",
-                                                      " (in 'string', line 200, column 4 to column 49)",
-                                                      " (in 'string', line 201, column 4 to column 49)",
-                                                      " (in 'string', line 199, column 15 to line 202, column 3)",
-                                                      " (in 'string', line 199, column 2 to line 205, column 3)",
-                                                      " (in 'string', line 209, column 2 to column 33)",
-                                                      " (in 'string', line 210, column 2 to column 40)",
-                                                      " (in 'string', line 213, column 4 to column 93)",
-                                                      " (in 'string', line 212, column 15 to line 214, column 3)",
-                                                      " (in 'string', line 212, column 2 to line 214, column 3)",
-                                                      " (in 'string', line 216, column 4 to column 91)",
-                                                      " (in 'string', line 215, column 15 to line 217, column 3)",
-                                                      " (in 'string', line 215, column 2 to line 217, column 3)",
-                                                      " (in 'string', line 223, column 4 to column 154)",
-                                                      " (in 'string', line 224, column 4 to column 154)",
-                                                      " (in 'string', line 222, column 7 to line 225, column 3)",
-                                                      " (in 'string', line 220, column 4 to column 52)",
-                                                      " (in 'string', line 221, column 4 to column 52)",
-                                                      " (in 'string', line 219, column 16 to line 222, column 3)",
-                                                      " (in 'string', line 219, column 2 to line 225, column 3)",
-                                                      " (in 'string', line 153, column 2 to column 12)",
-                                                      " (in 'string', line 155, column 2 to column 18)",
-                                                      " (in 'string', line 156, column 2 to column 18)",
-                                                      " (in 'string', line 158, column 9 to column 28)",
-                                                      " (in 'string', line 158, column 2 to column 33)",
-                                                      " (in 'string', line 159, column 9 to column 28)",
-                                                      " (in 'string', line 159, column 2 to column 33)",
-                                                      " (in 'string', line 161, column 9 to column 27)",
-                                                      " (in 'string', line 161, column 2 to column 36)",
-                                                      " (in 'string', line 162, column 9 to column 27)",
-                                                      " (in 'string', line 162, column 2 to column 34)",
-                                                      " (in 'string', line 164, column 2 to column 11)",
-                                                      " (in 'string', line 165, column 2 to column 11)",
-                                                      " (in 'string', line 167, column 9 to column 26)",
-                                                      " (in 'string', line 167, column 2 to column 37)",
-                                                      " (in 'string', line 168, column 9 to column 26)",
-                                                      " (in 'string', line 168, column 2 to column 37)",
-                                                      " (in 'string', line 169, column 20 to column 37)",
-                                                      " (in 'string', line 169, column 2 to column 39)",
-                                                      " (in 'string', line 170, column 20 to column 37)",
-                                                      " (in 'string', line 170, column 2 to column 39)",
-                                                      " (in 'string', line 172, column 9 to column 26)",
-                                                      " (in 'string', line 172, column 2 to column 36)",
-                                                      " (in 'string', line 173, column 9 to column 26)",
-                                                      " (in 'string', line 173, column 2 to column 36)",
-                                                      " (in 'string', line 174, column 9 to column 26)",
-                                                      " (in 'string', line 174, column 2 to column 47)",
-                                                      " (in 'string', line 175, column 9 to column 26)",
-                                                      " (in 'string', line 175, column 2 to column 47)",
-                                                      " (in 'string', line 176, column 2 to column 19)",
-                                                      " (in 'string', line 177, column 2 to column 19)",
-                                                      " (in 'string', line 182, column 111 to column 115)",
-                                                      " (in 'string', line 183, column 109 to column 113)",
+                                                      " (in 'string', line 196, column 2 to column 10)",
+                                                      " (in 'string', line 197, column 2 to column 25)",
+                                                      " (in 'string', line 198, column 2 to column 105)",
+                                                      " (in 'string', line 199, column 2 to column 103)",
+                                                      " (in 'string', line 202, column 2 to column 20)",
+                                                      " (in 'string', line 203, column 2 to column 20)",
+                                                      " (in 'string', line 204, column 2 to column 17)",
+                                                      " (in 'string', line 211, column 4 to column 66)",
+                                                      " (in 'string', line 212, column 4 to column 66)",
+                                                      " (in 'string', line 213, column 4 to column 62)",
+                                                      " (in 'string', line 210, column 7 to line 214, column 3)",
+                                                      " (in 'string', line 207, column 4 to column 62)",
+                                                      " (in 'string', line 208, column 4 to column 62)",
+                                                      " (in 'string', line 209, column 4 to column 62)",
+                                                      " (in 'string', line 206, column 15 to line 210, column 3)",
+                                                      " (in 'string', line 206, column 2 to line 214, column 3)",
+                                                      " (in 'string', line 219, column 4 to column 51)",
+                                                      " (in 'string', line 220, column 4 to column 51)",
+                                                      " (in 'string', line 218, column 7 to line 221, column 3)",
+                                                      " (in 'string', line 216, column 4 to column 49)",
+                                                      " (in 'string', line 217, column 4 to column 49)",
+                                                      " (in 'string', line 215, column 15 to line 218, column 3)",
+                                                      " (in 'string', line 215, column 2 to line 221, column 3)",
+                                                      " (in 'string', line 225, column 2 to column 33)",
+                                                      " (in 'string', line 226, column 2 to column 40)",
+                                                      " (in 'string', line 229, column 4 to column 93)",
+                                                      " (in 'string', line 228, column 15 to line 230, column 3)",
+                                                      " (in 'string', line 228, column 2 to line 230, column 3)",
+                                                      " (in 'string', line 232, column 4 to column 91)",
+                                                      " (in 'string', line 231, column 15 to line 233, column 3)",
+                                                      " (in 'string', line 231, column 2 to line 233, column 3)",
+                                                      " (in 'string', line 239, column 4 to column 154)",
+                                                      " (in 'string', line 240, column 4 to column 154)",
+                                                      " (in 'string', line 238, column 7 to line 241, column 3)",
+                                                      " (in 'string', line 236, column 4 to column 52)",
+                                                      " (in 'string', line 237, column 4 to column 52)",
+                                                      " (in 'string', line 235, column 16 to line 238, column 3)",
+                                                      " (in 'string', line 235, column 2 to line 241, column 3)",
+                                                      " (in 'string', line 169, column 2 to column 12)",
+                                                      " (in 'string', line 171, column 2 to column 18)",
+                                                      " (in 'string', line 172, column 2 to column 18)",
+                                                      " (in 'string', line 174, column 9 to column 28)",
+                                                      " (in 'string', line 174, column 2 to column 33)",
+                                                      " (in 'string', line 175, column 9 to column 28)",
+                                                      " (in 'string', line 175, column 2 to column 33)",
+                                                      " (in 'string', line 177, column 9 to column 27)",
+                                                      " (in 'string', line 177, column 2 to column 36)",
+                                                      " (in 'string', line 178, column 9 to column 27)",
+                                                      " (in 'string', line 178, column 2 to column 34)",
+                                                      " (in 'string', line 180, column 2 to column 11)",
+                                                      " (in 'string', line 181, column 2 to column 11)",
+                                                      " (in 'string', line 183, column 9 to column 26)",
+                                                      " (in 'string', line 183, column 2 to column 37)",
+                                                      " (in 'string', line 184, column 9 to column 26)",
+                                                      " (in 'string', line 184, column 2 to column 37)",
+                                                      " (in 'string', line 185, column 20 to column 37)",
+                                                      " (in 'string', line 185, column 2 to column 39)",
+                                                      " (in 'string', line 186, column 20 to column 37)",
+                                                      " (in 'string', line 186, column 2 to column 39)",
+                                                      " (in 'string', line 188, column 9 to column 26)",
+                                                      " (in 'string', line 188, column 2 to column 36)",
+                                                      " (in 'string', line 189, column 9 to column 26)",
+                                                      " (in 'string', line 189, column 2 to column 36)",
+                                                      " (in 'string', line 190, column 9 to column 26)",
+                                                      " (in 'string', line 190, column 2 to column 47)",
+                                                      " (in 'string', line 191, column 9 to column 26)",
+                                                      " (in 'string', line 191, column 2 to column 47)",
+                                                      " (in 'string', line 192, column 2 to column 19)",
+                                                      " (in 'string', line 193, column 2 to column 19)",
+                                                      " (in 'string', line 198, column 99 to column 103)",
+                                                      " (in 'string', line 199, column 97 to column 101)",
                                                       " (in 'string', line 6, column 4 to column 13)",
                                                       " (in 'string', line 5, column 32 to line 7, column 3)",
                                                       " (in 'string', line 9, column 4 to column 25)",
                                                       " (in 'string', line 8, column 39 to line 10, column 3)",
                                                       " (in 'string', line 14, column 4 to column 75)",
                                                       " (in 'string', line 13, column 61 to line 15, column 3)",
-                                                      " (in 'string', line 19, column 4 to column 12)",
-                                                      " (in 'string', line 23, column 6 to column 17)",
-                                                      " (in 'string', line 21, column 6 to column 31)",
-                                                      " (in 'string', line 20, column 4 to line 23, column 17)",
-                                                      " (in 'string', line 24, column 4 to column 14)",
-                                                      " (in 'string', line 18, column 38 to line 25, column 3)",
-                                                      " (in 'string', line 27, column 4 to column 12)",
+                                                      " (in 'string', line 19, column 4 to column 13)",
+                                                      " (in 'string', line 20, column 4 to column 15)",
+                                                      " (in 'string', line 21, column 4 to column 12)",
+                                                      " (in 'string', line 25, column 6 to column 24)",
+                                                      " (in 'string', line 26, column 6 to column 26)",
+                                                      " (in 'string', line 24, column 11 to line 27, column 5)",
+                                                      " (in 'string', line 23, column 6 to column 33)",
+                                                      " (in 'string', line 22, column 36 to line 24, column 5)",
+                                                      " (in 'string', line 22, column 4 to line 27, column 5)",
                                                       " (in 'string', line 31, column 6 to column 17)",
                                                       " (in 'string', line 29, column 6 to column 31)",
                                                       " (in 'string', line 28, column 4 to line 31, column 17)",
                                                       " (in 'string', line 32, column 4 to column 14)",
-                                                      " (in 'string', line 26, column 38 to line 33, column 3)",
-                                                      " (in 'string', line 45, column 4 to column 12)",
-                                                      " (in 'string', line 134, column 6 to column 61)",
-                                                      " (in 'string', line 143, column 8 to column 65)",
-                                                      " (in 'string', line 142, column 35 to line 144, column 7)",
-                                                      " (in 'string', line 142, column 12 to line 144, column 7)",
-                                                      " (in 'string', line 141, column 8 to column 65)",
-                                                      " (in 'string', line 140, column 35 to line 142, column 7)",
-                                                      " (in 'string', line 140, column 12 to line 144, column 7)",
-                                                      " (in 'string', line 136, column 8 to line 139, column 10)",
-                                                      " (in 'string', line 135, column 52 to line 140, column 7)",
-                                                      " (in 'string', line 135, column 6 to line 144, column 7)",
-                                                      " (in 'string', line 133, column 29 to line 145, column 5)",
-                                                      " (in 'string', line 133, column 10 to line 145, column 5)",
-                                                      " (in 'string', line 122, column 6 to column 75)",
-                                                      " (in 'string', line 131, column 8 to column 79)",
+                                                      " (in 'string', line 18, column 48 to line 33, column 3)",
+                                                      " (in 'string', line 35, column 4 to column 13)",
+                                                      " (in 'string', line 36, column 4 to column 15)",
+                                                      " (in 'string', line 37, column 4 to column 12)",
+                                                      " (in 'string', line 41, column 6 to column 24)",
+                                                      " (in 'string', line 42, column 6 to column 26)",
+                                                      " (in 'string', line 40, column 11 to line 43, column 5)",
+                                                      " (in 'string', line 39, column 6 to column 33)",
+                                                      " (in 'string', line 38, column 36 to line 40, column 5)",
+                                                      " (in 'string', line 38, column 4 to line 43, column 5)",
+                                                      " (in 'string', line 47, column 6 to column 17)",
+                                                      " (in 'string', line 45, column 6 to column 31)",
+                                                      " (in 'string', line 44, column 4 to line 47, column 17)",
+                                                      " (in 'string', line 48, column 4 to column 14)",
+                                                      " (in 'string', line 34, column 48 to line 49, column 3)",
+                                                      " (in 'string', line 61, column 4 to column 12)",
+                                                      " (in 'string', line 150, column 6 to column 61)",
+                                                      " (in 'string', line 159, column 8 to column 65)",
+                                                      " (in 'string', line 158, column 35 to line 160, column 7)",
+                                                      " (in 'string', line 158, column 12 to line 160, column 7)",
+                                                      " (in 'string', line 157, column 8 to column 65)",
+                                                      " (in 'string', line 156, column 35 to line 158, column 7)",
+                                                      " (in 'string', line 156, column 12 to line 160, column 7)",
+                                                      " (in 'string', line 152, column 8 to line 155, column 10)",
+                                                      " (in 'string', line 151, column 52 to line 156, column 7)",
+                                                      " (in 'string', line 151, column 6 to line 160, column 7)",
+                                                      " (in 'string', line 149, column 29 to line 161, column 5)",
+                                                      " (in 'string', line 149, column 10 to line 161, column 5)",
+                                                      " (in 'string', line 138, column 6 to column 75)",
+                                                      " (in 'string', line 147, column 8 to column 79)",
+                                                      " (in 'string', line 146, column 35 to line 148, column 7)",
+                                                      " (in 'string', line 146, column 12 to line 148, column 7)",
+                                                      " (in 'string', line 145, column 8 to column 79)",
+                                                      " (in 'string', line 144, column 35 to line 146, column 7)",
+                                                      " (in 'string', line 144, column 12 to line 148, column 7)",
+                                                      " (in 'string', line 140, column 8 to line 143, column 10)",
+                                                      " (in 'string', line 139, column 52 to line 144, column 7)",
+                                                      " (in 'string', line 139, column 6 to line 148, column 7)",
+                                                      " (in 'string', line 137, column 29 to line 149, column 5)",
+                                                      " (in 'string', line 137, column 10 to line 161, column 5)",
+                                                      " (in 'string', line 136, column 6 to column 78)",
+                                                      " (in 'string', line 135, column 29 to line 137, column 5)",
+                                                      " (in 'string', line 135, column 10 to line 161, column 5)",
+                                                      " (in 'string', line 124, column 6 to column 80)",
+                                                      " (in 'string', line 133, column 8 to column 84)",
+                                                      " (in 'string', line 132, column 35 to line 134, column 7)",
+                                                      " (in 'string', line 132, column 12 to line 134, column 7)",
+                                                      " (in 'string', line 131, column 8 to column 84)",
                                                       " (in 'string', line 130, column 35 to line 132, column 7)",
-                                                      " (in 'string', line 130, column 12 to line 132, column 7)",
-                                                      " (in 'string', line 129, column 8 to column 79)",
-                                                      " (in 'string', line 128, column 35 to line 130, column 7)",
-                                                      " (in 'string', line 128, column 12 to line 132, column 7)",
-                                                      " (in 'string', line 124, column 8 to line 127, column 10)",
-                                                      " (in 'string', line 123, column 52 to line 128, column 7)",
-                                                      " (in 'string', line 123, column 6 to line 132, column 7)",
-                                                      " (in 'string', line 121, column 29 to line 133, column 5)",
-                                                      " (in 'string', line 121, column 10 to line 145, column 5)",
-                                                      " (in 'string', line 120, column 6 to column 78)",
-                                                      " (in 'string', line 119, column 29 to line 121, column 5)",
-                                                      " (in 'string', line 119, column 10 to line 145, column 5)",
-                                                      " (in 'string', line 108, column 6 to column 80)",
-                                                      " (in 'string', line 117, column 8 to column 84)",
-                                                      " (in 'string', line 116, column 35 to line 118, column 7)",
-                                                      " (in 'string', line 116, column 12 to line 118, column 7)",
-                                                      " (in 'string', line 115, column 8 to column 84)",
-                                                      " (in 'string', line 114, column 35 to line 116, column 7)",
-                                                      " (in 'string', line 114, column 12 to line 118, column 7)",
-                                                      " (in 'string', line 110, column 8 to line 113, column 10)",
-                                                      " (in 'string', line 109, column 52 to line 114, column 7)",
-                                                      " (in 'string', line 109, column 6 to line 118, column 7)",
-                                                      " (in 'string', line 107, column 29 to line 119, column 5)",
-                                                      " (in 'string', line 107, column 10 to line 145, column 5)",
-                                                      " (in 'string', line 96, column 6 to column 76)",
-                                                      " (in 'string', line 105, column 8 to column 80)",
-                                                      " (in 'string', line 104, column 35 to line 106, column 7)",
-                                                      " (in 'string', line 104, column 12 to line 106, column 7)",
-                                                      " (in 'string', line 103, column 8 to column 80)",
-                                                      " (in 'string', line 102, column 35 to line 104, column 7)",
-                                                      " (in 'string', line 102, column 12 to line 106, column 7)",
-                                                      " (in 'string', line 98, column 8 to line 101, column 10)",
-                                                      " (in 'string', line 97, column 52 to line 102, column 7)",
-                                                      " (in 'string', line 97, column 6 to line 106, column 7)",
-                                                      " (in 'string', line 95, column 29 to line 107, column 5)",
-                                                      " (in 'string', line 95, column 10 to line 145, column 5)",
-                                                      " (in 'string', line 84, column 6 to column 101)",
-                                                      " (in 'string', line 93, column 8 to column 105)",
-                                                      " (in 'string', line 92, column 35 to line 94, column 7)",
-                                                      " (in 'string', line 92, column 12 to line 94, column 7)",
-                                                      " (in 'string', line 91, column 8 to column 105)",
-                                                      " (in 'string', line 90, column 35 to line 92, column 7)",
-                                                      " (in 'string', line 90, column 12 to line 94, column 7)",
-                                                      " (in 'string', line 86, column 8 to line 89, column 10)",
-                                                      " (in 'string', line 85, column 52 to line 90, column 7)",
-                                                      " (in 'string', line 85, column 6 to line 94, column 7)",
-                                                      " (in 'string', line 83, column 29 to line 95, column 5)",
-                                                      " (in 'string', line 83, column 10 to line 145, column 5)",
-                                                      " (in 'string', line 72, column 6 to column 77)",
-                                                      " (in 'string', line 81, column 8 to column 81)",
-                                                      " (in 'string', line 80, column 35 to line 82, column 7)",
-                                                      " (in 'string', line 80, column 12 to line 82, column 7)",
-                                                      " (in 'string', line 79, column 8 to column 81)",
-                                                      " (in 'string', line 78, column 35 to line 80, column 7)",
-                                                      " (in 'string', line 78, column 12 to line 82, column 7)",
-                                                      " (in 'string', line 74, column 8 to line 77, column 10)",
-                                                      " (in 'string', line 73, column 52 to line 78, column 7)",
-                                                      " (in 'string', line 73, column 6 to line 82, column 7)",
-                                                      " (in 'string', line 71, column 29 to line 83, column 5)",
-                                                      " (in 'string', line 71, column 10 to line 145, column 5)",
-                                                      " (in 'string', line 60, column 6 to column 80)",
-                                                      " (in 'string', line 69, column 8 to column 84)",
-                                                      " (in 'string', line 68, column 35 to line 70, column 7)",
-                                                      " (in 'string', line 68, column 12 to line 70, column 7)",
-                                                      " (in 'string', line 67, column 8 to column 84)",
-                                                      " (in 'string', line 66, column 35 to line 68, column 7)",
-                                                      " (in 'string', line 66, column 12 to line 70, column 7)",
-                                                      " (in 'string', line 62, column 8 to line 65, column 10)",
-                                                      " (in 'string', line 61, column 52 to line 66, column 7)",
-                                                      " (in 'string', line 61, column 6 to line 70, column 7)",
-                                                      " (in 'string', line 59, column 29 to line 71, column 5)",
-                                                      " (in 'string', line 59, column 10 to line 145, column 5)",
-                                                      " (in 'string', line 48, column 6 to column 77)",
-                                                      " (in 'string', line 57, column 8 to column 81)",
-                                                      " (in 'string', line 56, column 35 to line 58, column 7)",
-                                                      " (in 'string', line 56, column 12 to line 58, column 7)",
-                                                      " (in 'string', line 55, column 8 to column 81)",
-                                                      " (in 'string', line 54, column 35 to line 56, column 7)",
-                                                      " (in 'string', line 54, column 12 to line 58, column 7)",
-                                                      " (in 'string', line 50, column 8 to line 53, column 10)",
-                                                      " (in 'string', line 49, column 52 to line 54, column 7)",
-                                                      " (in 'string', line 49, column 6 to line 58, column 7)",
-                                                      " (in 'string', line 47, column 23 to line 59, column 5)",
-                                                      " (in 'string', line 47, column 4 to line 145, column 5)",
-                                                      " (in 'string', line 147, column 4 to column 14)",
-                                                      " (in 'string', line 44, column 107 to line 148, column 3)"};
+                                                      " (in 'string', line 130, column 12 to line 134, column 7)",
+                                                      " (in 'string', line 126, column 8 to line 129, column 10)",
+                                                      " (in 'string', line 125, column 52 to line 130, column 7)",
+                                                      " (in 'string', line 125, column 6 to line 134, column 7)",
+                                                      " (in 'string', line 123, column 29 to line 135, column 5)",
+                                                      " (in 'string', line 123, column 10 to line 161, column 5)",
+                                                      " (in 'string', line 112, column 6 to column 76)",
+                                                      " (in 'string', line 121, column 8 to column 80)",
+                                                      " (in 'string', line 120, column 35 to line 122, column 7)",
+                                                      " (in 'string', line 120, column 12 to line 122, column 7)",
+                                                      " (in 'string', line 119, column 8 to column 80)",
+                                                      " (in 'string', line 118, column 35 to line 120, column 7)",
+                                                      " (in 'string', line 118, column 12 to line 122, column 7)",
+                                                      " (in 'string', line 114, column 8 to line 117, column 10)",
+                                                      " (in 'string', line 113, column 52 to line 118, column 7)",
+                                                      " (in 'string', line 113, column 6 to line 122, column 7)",
+                                                      " (in 'string', line 111, column 29 to line 123, column 5)",
+                                                      " (in 'string', line 111, column 10 to line 161, column 5)",
+                                                      " (in 'string', line 100, column 6 to column 101)",
+                                                      " (in 'string', line 109, column 8 to column 105)",
+                                                      " (in 'string', line 108, column 35 to line 110, column 7)",
+                                                      " (in 'string', line 108, column 12 to line 110, column 7)",
+                                                      " (in 'string', line 107, column 8 to column 105)",
+                                                      " (in 'string', line 106, column 35 to line 108, column 7)",
+                                                      " (in 'string', line 106, column 12 to line 110, column 7)",
+                                                      " (in 'string', line 102, column 8 to line 105, column 10)",
+                                                      " (in 'string', line 101, column 52 to line 106, column 7)",
+                                                      " (in 'string', line 101, column 6 to line 110, column 7)",
+                                                      " (in 'string', line 99, column 29 to line 111, column 5)",
+                                                      " (in 'string', line 99, column 10 to line 161, column 5)",
+                                                      " (in 'string', line 88, column 6 to column 77)",
+                                                      " (in 'string', line 97, column 8 to column 81)",
+                                                      " (in 'string', line 96, column 35 to line 98, column 7)",
+                                                      " (in 'string', line 96, column 12 to line 98, column 7)",
+                                                      " (in 'string', line 95, column 8 to column 81)",
+                                                      " (in 'string', line 94, column 35 to line 96, column 7)",
+                                                      " (in 'string', line 94, column 12 to line 98, column 7)",
+                                                      " (in 'string', line 90, column 8 to line 93, column 10)",
+                                                      " (in 'string', line 89, column 52 to line 94, column 7)",
+                                                      " (in 'string', line 89, column 6 to line 98, column 7)",
+                                                      " (in 'string', line 87, column 29 to line 99, column 5)",
+                                                      " (in 'string', line 87, column 10 to line 161, column 5)",
+                                                      " (in 'string', line 76, column 6 to column 80)",
+                                                      " (in 'string', line 85, column 8 to column 84)",
+                                                      " (in 'string', line 84, column 35 to line 86, column 7)",
+                                                      " (in 'string', line 84, column 12 to line 86, column 7)",
+                                                      " (in 'string', line 83, column 8 to column 84)",
+                                                      " (in 'string', line 82, column 35 to line 84, column 7)",
+                                                      " (in 'string', line 82, column 12 to line 86, column 7)",
+                                                      " (in 'string', line 78, column 8 to line 81, column 10)",
+                                                      " (in 'string', line 77, column 52 to line 82, column 7)",
+                                                      " (in 'string', line 77, column 6 to line 86, column 7)",
+                                                      " (in 'string', line 75, column 29 to line 87, column 5)",
+                                                      " (in 'string', line 75, column 10 to line 161, column 5)",
+                                                      " (in 'string', line 64, column 6 to column 77)",
+                                                      " (in 'string', line 73, column 8 to column 81)",
+                                                      " (in 'string', line 72, column 35 to line 74, column 7)",
+                                                      " (in 'string', line 72, column 12 to line 74, column 7)",
+                                                      " (in 'string', line 71, column 8 to column 81)",
+                                                      " (in 'string', line 70, column 35 to line 72, column 7)",
+                                                      " (in 'string', line 70, column 12 to line 74, column 7)",
+                                                      " (in 'string', line 66, column 8 to line 69, column 10)",
+                                                      " (in 'string', line 65, column 52 to line 70, column 7)",
+                                                      " (in 'string', line 65, column 6 to line 74, column 7)",
+                                                      " (in 'string', line 63, column 23 to line 75, column 5)",
+                                                      " (in 'string', line 63, column 4 to line 161, column 5)",
+                                                      " (in 'string', line 163, column 4 to column 14)",
+                                                      " (in 'string', line 60, column 107 to line 164, column 3)"};
 template <bool propto__, typename T0__>
 stan::promote_args_t<T0__>
 Jeffreys_mu_lpdf(const T0__& mu, std::ostream* pstream__) {
@@ -349,27 +365,45 @@ return pool_sigma(sigma1, sigma2, N1, N2, pstream__);
 }
 };
 template <typename T1__>
-stan::promote_args_t<T1__>
-coefs_lb(const int& type, const T1__& bound, std::ostream* pstream__) {
-  using local_scalar_t__ = stan::promote_args_t<T1__>;
+stan::promote_args_t<stan::value_type_t<T1__>>
+coefs_lb(const std::vector<int>& type_in, const T1__& bound_in_arg__,
+         std::ostream* pstream__) {
+  using local_scalar_t__ = stan::promote_args_t<stan::value_type_t<T1__>>;
+  const auto& bound_in = to_ref(bound_in_arg__);
   const static bool propto__ = true;
   (void) propto__;
   local_scalar_t__ DUMMY_VAR__(std::numeric_limits<double>::quiet_NaN());
   (void) DUMMY_VAR__;  // suppress unused var warning
   
   try {
+    int type;
+    type = std::numeric_limits<int>::min();
+    
+    local_scalar_t__ bound;
+    bound = DUMMY_VAR__;
+    
     local_scalar_t__ lb;
     lb = DUMMY_VAR__;
     
-    current_statement__ = 81;
+    current_statement__ = 86;
+    if (logical_eq(num_elements(type_in), 0)) {
+      current_statement__ = 84;
+      return stan::math::negative_infinity();
+    } else {
+      current_statement__ = 81;
+      type = type_in[(1 - 1)];
+      current_statement__ = 82;
+      bound = bound_in[(1 - 1)];
+    }
+    current_statement__ = 89;
     if (logical_eq(type, 0)) {
-      current_statement__ = 80;
+      current_statement__ = 88;
       lb = stan::math::negative_infinity();
     } else {
-      current_statement__ = 79;
+      current_statement__ = 87;
       lb = bound;
     }
-    current_statement__ = 82;
+    current_statement__ = 90;
     return lb;
   } catch (const std::exception& e) {
     stan::lang::rethrow_located(e, locations_array__[current_statement__]);
@@ -380,34 +414,53 @@ coefs_lb(const int& type, const T1__& bound, std::ostream* pstream__) {
 }
 struct coefs_lb_functor__ {
 template <typename T1__>
-stan::promote_args_t<T1__>
-operator()(const int& type, const T1__& bound, std::ostream* pstream__)  const 
+stan::promote_args_t<stan::value_type_t<T1__>>
+operator()(const std::vector<int>& type_in, const T1__& bound_in,
+           std::ostream* pstream__)  const 
 {
-return coefs_lb(type, bound, pstream__);
+return coefs_lb(type_in, bound_in, pstream__);
 }
 };
 template <typename T1__>
-stan::promote_args_t<T1__>
-coefs_ub(const int& type, const T1__& bound, std::ostream* pstream__) {
-  using local_scalar_t__ = stan::promote_args_t<T1__>;
+stan::promote_args_t<stan::value_type_t<T1__>>
+coefs_ub(const std::vector<int>& type_in, const T1__& bound_in_arg__,
+         std::ostream* pstream__) {
+  using local_scalar_t__ = stan::promote_args_t<stan::value_type_t<T1__>>;
+  const auto& bound_in = to_ref(bound_in_arg__);
   const static bool propto__ = true;
   (void) propto__;
   local_scalar_t__ DUMMY_VAR__(std::numeric_limits<double>::quiet_NaN());
   (void) DUMMY_VAR__;  // suppress unused var warning
   
   try {
+    int type;
+    type = std::numeric_limits<int>::min();
+    
+    local_scalar_t__ bound;
+    bound = DUMMY_VAR__;
+    
     local_scalar_t__ lb;
     lb = DUMMY_VAR__;
     
-    current_statement__ = 87;
+    current_statement__ = 100;
+    if (logical_eq(num_elements(type_in), 0)) {
+      current_statement__ = 98;
+      return stan::math::positive_infinity();
+    } else {
+      current_statement__ = 95;
+      type = type_in[(2 - 1)];
+      current_statement__ = 96;
+      bound = bound_in[(2 - 1)];
+    }
+    current_statement__ = 103;
     if (logical_eq(type, 0)) {
-      current_statement__ = 86;
+      current_statement__ = 102;
       lb = stan::math::positive_infinity();
     } else {
-      current_statement__ = 85;
+      current_statement__ = 101;
       lb = bound;
     }
-    current_statement__ = 88;
+    current_statement__ = 104;
     return lb;
   } catch (const std::exception& e) {
     stan::lang::rethrow_located(e, locations_array__[current_statement__]);
@@ -418,10 +471,11 @@ coefs_ub(const int& type, const T1__& bound, std::ostream* pstream__) {
 }
 struct coefs_ub_functor__ {
 template <typename T1__>
-stan::promote_args_t<T1__>
-operator()(const int& type, const T1__& bound, std::ostream* pstream__)  const 
+stan::promote_args_t<stan::value_type_t<T1__>>
+operator()(const std::vector<int>& type_in, const T1__& bound_in,
+           std::ostream* pstream__)  const 
 {
-return coefs_ub(type, bound, pstream__);
+return coefs_ub(type_in, bound_in, pstream__);
 }
 };
 template <typename T0__, typename T2__, typename T4__>
@@ -445,15 +499,15 @@ set_prior(const T0__& parameter, const int& prior_type,
     local_scalar_t__ ll;
     ll = DUMMY_VAR__;
     
-    current_statement__ = 189;
+    current_statement__ = 205;
     if (logical_eq(prior_type, 1)) {
-      current_statement__ = 178;
+      current_statement__ = 194;
       ll = normal_lpdf<false>(parameter, prior_parameters[(1 - 1)],
              prior_parameters[(2 - 1)]);
-      current_statement__ = 187;
+      current_statement__ = 203;
       if ((primitive_value(logical_neq(bounds_type[(1 - 1)], 0)) &&
           primitive_value(logical_neq(bounds_type[(2 - 1)], 0)))) {
-        current_statement__ = 185;
+        current_statement__ = 201;
         ll = (ll -
                log_diff_exp(
                  normal_lcdf(bounds[(2 - 1)], prior_parameters[(1 - 1)],
@@ -461,16 +515,16 @@ set_prior(const T0__& parameter, const int& prior_type,
                  normal_lcdf(bounds[(1 - 1)], prior_parameters[(1 - 1)],
                    prior_parameters[(2 - 1)])));
       } else {
-        current_statement__ = 184;
+        current_statement__ = 200;
         if (logical_neq(bounds_type[(1 - 1)], 0)) {
-          current_statement__ = 182;
+          current_statement__ = 198;
           ll = (ll -
                  normal_lccdf(bounds[(1 - 1)], prior_parameters[(1 - 1)],
                    prior_parameters[(2 - 1)]));
         } else {
-          current_statement__ = 181;
+          current_statement__ = 197;
           if (logical_neq(bounds_type[(2 - 1)], 0)) {
-            current_statement__ = 179;
+            current_statement__ = 195;
             ll = (ll -
                    normal_lcdf(bounds[(2 - 1)], prior_parameters[(1 - 1)],
                      prior_parameters[(2 - 1)]));
@@ -478,15 +532,15 @@ set_prior(const T0__& parameter, const int& prior_type,
         }
       }
     } else {
-      current_statement__ = 177;
+      current_statement__ = 193;
       if (logical_eq(prior_type, 2)) {
-        current_statement__ = 166;
+        current_statement__ = 182;
         ll = lognormal_lpdf<false>(parameter, prior_parameters[(1 - 1)],
                prior_parameters[(2 - 1)]);
-        current_statement__ = 175;
+        current_statement__ = 191;
         if ((primitive_value(logical_neq(bounds_type[(1 - 1)], 0)) &&
             primitive_value(logical_neq(bounds_type[(2 - 1)], 0)))) {
-          current_statement__ = 173;
+          current_statement__ = 189;
           ll = (ll -
                  log_diff_exp(
                    lognormal_lcdf(bounds[(2 - 1)], prior_parameters[(1 - 1)],
@@ -494,16 +548,16 @@ set_prior(const T0__& parameter, const int& prior_type,
                    lognormal_lcdf(bounds[(1 - 1)], prior_parameters[(1 - 1)],
                      prior_parameters[(2 - 1)])));
         } else {
-          current_statement__ = 172;
+          current_statement__ = 188;
           if (logical_neq(bounds_type[(1 - 1)], 0)) {
-            current_statement__ = 170;
+            current_statement__ = 186;
             ll = (ll -
                    lognormal_lccdf(bounds[(1 - 1)],
                      prior_parameters[(1 - 1)], prior_parameters[(2 - 1)]));
           } else {
-            current_statement__ = 169;
+            current_statement__ = 185;
             if (logical_neq(bounds_type[(2 - 1)], 0)) {
-              current_statement__ = 167;
+              current_statement__ = 183;
               ll = (ll -
                      lognormal_lcdf(bounds[(2 - 1)],
                        prior_parameters[(1 - 1)], prior_parameters[(2 - 1)]));
@@ -511,15 +565,15 @@ set_prior(const T0__& parameter, const int& prior_type,
           }
         }
       } else {
-        current_statement__ = 165;
+        current_statement__ = 181;
         if (logical_eq(prior_type, 3)) {
-          current_statement__ = 154;
+          current_statement__ = 170;
           ll = cauchy_lpdf<false>(parameter, prior_parameters[(1 - 1)],
                  prior_parameters[(2 - 1)]);
-          current_statement__ = 163;
+          current_statement__ = 179;
           if ((primitive_value(logical_neq(bounds_type[(1 - 1)], 0)) &&
               primitive_value(logical_neq(bounds_type[(2 - 1)], 0)))) {
-            current_statement__ = 161;
+            current_statement__ = 177;
             ll = (ll -
                    log_diff_exp(
                      cauchy_lcdf(bounds[(2 - 1)], prior_parameters[(1 - 1)],
@@ -527,16 +581,16 @@ set_prior(const T0__& parameter, const int& prior_type,
                      cauchy_lcdf(bounds[(1 - 1)], prior_parameters[(1 - 1)],
                        prior_parameters[(2 - 1)])));
           } else {
-            current_statement__ = 160;
+            current_statement__ = 176;
             if (logical_neq(bounds_type[(1 - 1)], 0)) {
-              current_statement__ = 158;
+              current_statement__ = 174;
               ll = (ll -
                      cauchy_lccdf(bounds[(1 - 1)], prior_parameters[(1 - 1)],
                        prior_parameters[(2 - 1)]));
             } else {
-              current_statement__ = 157;
+              current_statement__ = 173;
               if (logical_neq(bounds_type[(2 - 1)], 0)) {
-                current_statement__ = 155;
+                current_statement__ = 171;
                 ll = (ll -
                        cauchy_lcdf(bounds[(2 - 1)],
                          prior_parameters[(1 - 1)],
@@ -545,15 +599,15 @@ set_prior(const T0__& parameter, const int& prior_type,
             }
           }
         } else {
-          current_statement__ = 153;
+          current_statement__ = 169;
           if (logical_eq(prior_type, 4)) {
-            current_statement__ = 142;
+            current_statement__ = 158;
             ll = student_t_lpdf<false>(parameter, prior_parameters[(1 - 1)],
                    prior_parameters[(2 - 1)], prior_parameters[(3 - 1)]);
-            current_statement__ = 151;
+            current_statement__ = 167;
             if ((primitive_value(logical_neq(bounds_type[(1 - 1)], 0)) &&
                 primitive_value(logical_neq(bounds_type[(2 - 1)], 0)))) {
-              current_statement__ = 149;
+              current_statement__ = 165;
               ll = (ll -
                      log_diff_exp(
                        student_t_lcdf(bounds[(2 - 1)],
@@ -565,18 +619,18 @@ set_prior(const T0__& parameter, const int& prior_type,
                          prior_parameters[(2 - 1)],
                          prior_parameters[(3 - 1)])));
             } else {
-              current_statement__ = 148;
+              current_statement__ = 164;
               if (logical_neq(bounds_type[(1 - 1)], 0)) {
-                current_statement__ = 146;
+                current_statement__ = 162;
                 ll = (ll -
                        student_t_lccdf(bounds[(1 - 1)],
                          prior_parameters[(1 - 1)],
                          prior_parameters[(2 - 1)],
                          prior_parameters[(3 - 1)]));
               } else {
-                current_statement__ = 145;
+                current_statement__ = 161;
                 if (logical_neq(bounds_type[(2 - 1)], 0)) {
-                  current_statement__ = 143;
+                  current_statement__ = 159;
                   ll = (ll -
                          student_t_lcdf(bounds[(2 - 1)],
                            prior_parameters[(1 - 1)],
@@ -586,15 +640,15 @@ set_prior(const T0__& parameter, const int& prior_type,
               }
             }
           } else {
-            current_statement__ = 141;
+            current_statement__ = 157;
             if (logical_eq(prior_type, 5)) {
-              current_statement__ = 130;
+              current_statement__ = 146;
               ll = gamma_lpdf<false>(parameter, prior_parameters[(1 - 1)],
                      prior_parameters[(2 - 1)]);
-              current_statement__ = 139;
+              current_statement__ = 155;
               if ((primitive_value(logical_neq(bounds_type[(1 - 1)], 0)) &&
                   primitive_value(logical_neq(bounds_type[(2 - 1)], 0)))) {
-                current_statement__ = 137;
+                current_statement__ = 153;
                 ll = (ll -
                        log_diff_exp(
                          gamma_lcdf(bounds[(2 - 1)],
@@ -604,17 +658,17 @@ set_prior(const T0__& parameter, const int& prior_type,
                            prior_parameters[(1 - 1)],
                            prior_parameters[(2 - 1)])));
               } else {
-                current_statement__ = 136;
+                current_statement__ = 152;
                 if (logical_neq(bounds_type[(1 - 1)], 0)) {
-                  current_statement__ = 134;
+                  current_statement__ = 150;
                   ll = (ll -
                          gamma_lccdf(bounds[(1 - 1)],
                            prior_parameters[(1 - 1)],
                            prior_parameters[(2 - 1)]));
                 } else {
-                  current_statement__ = 133;
+                  current_statement__ = 149;
                   if (logical_neq(bounds_type[(2 - 1)], 0)) {
-                    current_statement__ = 131;
+                    current_statement__ = 147;
                     ll = (ll -
                            gamma_lcdf(bounds[(2 - 1)],
                              prior_parameters[(1 - 1)],
@@ -623,15 +677,15 @@ set_prior(const T0__& parameter, const int& prior_type,
                 }
               }
             } else {
-              current_statement__ = 129;
+              current_statement__ = 145;
               if (logical_eq(prior_type, 6)) {
-                current_statement__ = 118;
+                current_statement__ = 134;
                 ll = inv_gamma_lpdf<false>(parameter,
                        prior_parameters[(1 - 1)], prior_parameters[(2 - 1)]);
-                current_statement__ = 127;
+                current_statement__ = 143;
                 if ((primitive_value(logical_neq(bounds_type[(1 - 1)], 0)) &&
                     primitive_value(logical_neq(bounds_type[(2 - 1)], 0)))) {
-                  current_statement__ = 125;
+                  current_statement__ = 141;
                   ll = (ll -
                          log_diff_exp(
                            inv_gamma_lcdf(bounds[(2 - 1)],
@@ -641,17 +695,17 @@ set_prior(const T0__& parameter, const int& prior_type,
                              prior_parameters[(1 - 1)],
                              prior_parameters[(2 - 1)])));
                 } else {
-                  current_statement__ = 124;
+                  current_statement__ = 140;
                   if (logical_neq(bounds_type[(1 - 1)], 0)) {
-                    current_statement__ = 122;
+                    current_statement__ = 138;
                     ll = (ll -
                            inv_gamma_lccdf(bounds[(1 - 1)],
                              prior_parameters[(1 - 1)],
                              prior_parameters[(2 - 1)]));
                   } else {
-                    current_statement__ = 121;
+                    current_statement__ = 137;
                     if (logical_neq(bounds_type[(2 - 1)], 0)) {
-                      current_statement__ = 119;
+                      current_statement__ = 135;
                       ll = (ll -
                              inv_gamma_lcdf(bounds[(2 - 1)],
                                prior_parameters[(1 - 1)],
@@ -660,25 +714,25 @@ set_prior(const T0__& parameter, const int& prior_type,
                   }
                 }
               } else {
-                current_statement__ = 117;
+                current_statement__ = 133;
                 if (logical_eq(prior_type, 7)) {
-                  current_statement__ = 115;
+                  current_statement__ = 131;
                   ll = uniform_lpdf<false>(parameter,
                          prior_parameters[(1 - 1)],
                          prior_parameters[(2 - 1)]);
                 } else {
-                  current_statement__ = 114;
+                  current_statement__ = 130;
                   if (logical_eq(prior_type, 8)) {
-                    current_statement__ = 103;
+                    current_statement__ = 119;
                     ll = beta_lpdf<false>(parameter,
                            prior_parameters[(1 - 1)],
                            prior_parameters[(2 - 1)]);
-                    current_statement__ = 112;
+                    current_statement__ = 128;
                     if ((primitive_value(
                         logical_neq(bounds_type[(1 - 1)], 0)) &&
                         primitive_value(
                         logical_neq(bounds_type[(2 - 1)], 0)))) {
-                      current_statement__ = 110;
+                      current_statement__ = 126;
                       ll = (ll -
                              log_diff_exp(
                                beta_lcdf(bounds[(2 - 1)],
@@ -688,17 +742,17 @@ set_prior(const T0__& parameter, const int& prior_type,
                                  prior_parameters[(1 - 1)],
                                  prior_parameters[(2 - 1)])));
                     } else {
-                      current_statement__ = 109;
+                      current_statement__ = 125;
                       if (logical_neq(bounds_type[(1 - 1)], 0)) {
-                        current_statement__ = 107;
+                        current_statement__ = 123;
                         ll = (ll -
                                beta_lccdf(bounds[(1 - 1)],
                                  prior_parameters[(1 - 1)],
                                  prior_parameters[(2 - 1)]));
                       } else {
-                        current_statement__ = 106;
+                        current_statement__ = 122;
                         if (logical_neq(bounds_type[(2 - 1)], 0)) {
-                          current_statement__ = 104;
+                          current_statement__ = 120;
                           ll = (ll -
                                  beta_lcdf(bounds[(2 - 1)],
                                    prior_parameters[(1 - 1)],
@@ -707,17 +761,17 @@ set_prior(const T0__& parameter, const int& prior_type,
                       }
                     }
                   } else {
-                    current_statement__ = 102;
+                    current_statement__ = 118;
                     if (logical_eq(prior_type, 9)) {
-                      current_statement__ = 91;
+                      current_statement__ = 107;
                       ll = exponential_lpdf<false>(parameter,
                              prior_parameters[(1 - 1)]);
-                      current_statement__ = 100;
+                      current_statement__ = 116;
                       if ((primitive_value(
                           logical_neq(bounds_type[(1 - 1)], 0)) &&
                           primitive_value(
                           logical_neq(bounds_type[(2 - 1)], 0)))) {
-                        current_statement__ = 98;
+                        current_statement__ = 114;
                         ll = (ll -
                                log_diff_exp(
                                  exponential_lcdf(bounds[(2 - 1)],
@@ -725,16 +779,16 @@ set_prior(const T0__& parameter, const int& prior_type,
                                  exponential_lcdf(bounds[(1 - 1)],
                                    prior_parameters[(1 - 1)])));
                       } else {
-                        current_statement__ = 97;
+                        current_statement__ = 113;
                         if (logical_neq(bounds_type[(1 - 1)], 0)) {
-                          current_statement__ = 95;
+                          current_statement__ = 111;
                           ll = (ll -
                                  exponential_lccdf(bounds[(1 - 1)],
                                    prior_parameters[(1 - 1)]));
                         } else {
-                          current_statement__ = 94;
+                          current_statement__ = 110;
                           if (logical_neq(bounds_type[(2 - 1)], 0)) {
-                            current_statement__ = 92;
+                            current_statement__ = 108;
                             ll = (ll -
                                    exponential_lcdf(bounds[(2 - 1)],
                                      prior_parameters[(1 - 1)]));
@@ -750,7 +804,7 @@ set_prior(const T0__& parameter, const int& prior_type,
         }
       }
     }
-    current_statement__ = 190;
+    current_statement__ = 206;
     return ll;
   } catch (const std::exception& e) {
     stan::lang::rethrow_located(e, locations_array__[current_statement__]);
@@ -1225,15 +1279,15 @@ public:
           current_statement__ = 3;
           assign(delta, cons_list(index_uni(sym1__), nil_index_list()),
             stan::math::lub_constrain(delta[(sym1__ - 1)],
-              coefs_lb(bounds_type_d[(1 - 1)], bounds_d[(1 - 1)], pstream__),
-              coefs_ub(bounds_type_d[(2 - 1)], bounds_d[(2 - 1)], pstream__),
-              lp__), "assigning variable delta");
+              coefs_lb(bounds_type_d, bounds_d, pstream__),
+              coefs_ub(bounds_type_d, bounds_d, pstream__), lp__),
+            "assigning variable delta");
         } else {
           current_statement__ = 3;
           assign(delta, cons_list(index_uni(sym1__), nil_index_list()),
             stan::math::lub_constrain(delta[(sym1__ - 1)],
-              coefs_lb(bounds_type_d[(1 - 1)], bounds_d[(1 - 1)], pstream__),
-              coefs_ub(bounds_type_d[(2 - 1)], bounds_d[(2 - 1)], pstream__)),
+              coefs_lb(bounds_type_d, bounds_d, pstream__),
+              coefs_ub(bounds_type_d, bounds_d, pstream__)),
             "assigning variable delta");
         }}
       std::vector<local_scalar_t__> rho;
@@ -1251,15 +1305,15 @@ public:
           current_statement__ = 4;
           assign(rho, cons_list(index_uni(sym1__), nil_index_list()),
             stan::math::lub_constrain(rho[(sym1__ - 1)],
-              coefs_lb(bounds_type_r[(1 - 1)], bounds_r[(1 - 1)], pstream__),
-              coefs_ub(bounds_type_r[(2 - 1)], bounds_r[(2 - 1)], pstream__),
-              lp__), "assigning variable rho");
+              coefs_lb(bounds_type_r, bounds_r, pstream__),
+              coefs_ub(bounds_type_r, bounds_r, pstream__), lp__),
+            "assigning variable rho");
         } else {
           current_statement__ = 4;
           assign(rho, cons_list(index_uni(sym1__), nil_index_list()),
             stan::math::lub_constrain(rho[(sym1__ - 1)],
-              coefs_lb(bounds_type_r[(1 - 1)], bounds_r[(1 - 1)], pstream__),
-              coefs_ub(bounds_type_r[(2 - 1)], bounds_r[(2 - 1)], pstream__)),
+              coefs_lb(bounds_type_r, bounds_r, pstream__),
+              coefs_ub(bounds_type_r, bounds_r, pstream__)),
             "assigning variable rho");
         }}
       local_scalar_t__ pooled_sigma;
@@ -1419,8 +1473,8 @@ public:
         current_statement__ = 3;
         assign(delta, cons_list(index_uni(sym1__), nil_index_list()),
           stan::math::lub_constrain(delta[(sym1__ - 1)],
-            coefs_lb(bounds_type_d[(1 - 1)], bounds_d[(1 - 1)], pstream__),
-            coefs_ub(bounds_type_d[(2 - 1)], bounds_d[(2 - 1)], pstream__)),
+            coefs_lb(bounds_type_d, bounds_d, pstream__),
+            coefs_ub(bounds_type_d, bounds_d, pstream__)),
           "assigning variable delta");}
       std::vector<double> rho;
       rho = std::vector<double>(is_r, std::numeric_limits<double>::quiet_NaN());
@@ -1435,8 +1489,8 @@ public:
         current_statement__ = 4;
         assign(rho, cons_list(index_uni(sym1__), nil_index_list()),
           stan::math::lub_constrain(rho[(sym1__ - 1)],
-            coefs_lb(bounds_type_r[(1 - 1)], bounds_r[(1 - 1)], pstream__),
-            coefs_ub(bounds_type_r[(2 - 1)], bounds_r[(2 - 1)], pstream__)),
+            coefs_lb(bounds_type_r, bounds_r, pstream__),
+            coefs_ub(bounds_type_r, bounds_r, pstream__)),
           "assigning variable rho");}
       double pooled_sigma;
       pooled_sigma = std::numeric_limits<double>::quiet_NaN();
@@ -1565,8 +1619,8 @@ public:
         current_statement__ = 3;
         assign(delta_free__, cons_list(index_uni(sym1__), nil_index_list()),
           stan::math::lub_free(delta[(sym1__ - 1)],
-            coefs_lb(bounds_type_d[(1 - 1)], bounds_d[(1 - 1)], pstream__),
-            coefs_ub(bounds_type_d[(2 - 1)], bounds_d[(2 - 1)], pstream__)),
+            coefs_lb(bounds_type_d, bounds_d, pstream__),
+            coefs_ub(bounds_type_d, bounds_d, pstream__)),
           "assigning variable delta_free__");}
       std::vector<double> rho;
       rho = std::vector<double>(is_r, std::numeric_limits<double>::quiet_NaN());
@@ -1582,8 +1636,8 @@ public:
         current_statement__ = 4;
         assign(rho_free__, cons_list(index_uni(sym1__), nil_index_list()),
           stan::math::lub_free(rho[(sym1__ - 1)],
-            coefs_lb(bounds_type_r[(1 - 1)], bounds_r[(1 - 1)], pstream__),
-            coefs_ub(bounds_type_r[(2 - 1)], bounds_r[(2 - 1)], pstream__)),
+            coefs_lb(bounds_type_r, bounds_r, pstream__),
+            coefs_ub(bounds_type_r, bounds_r, pstream__)),
           "assigning variable rho_free__");}
       vars__.emplace_back(mu);
       vars__.emplace_back(sigma2_free__);
