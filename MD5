@@ -1,6 +1,6 @@
-61c5a9f333f1aa9a381832fdc52b77a0 *DESCRIPTION
+a72acf23901a7ecbf5b14e1e6fd21584 *DESCRIPTION
 614e4c84a8fdba9c82912b884c79fced *NAMESPACE
-4a0a1e22197327a9972048065c71bce6 *NEWS.md
+8d8f40a9d0b69b5fbd064095ebc81ea7 *NEWS.md
 d22b477f8fca3a194271a63b0b99af4a *R/RoBTT-package.R
 647ca9930f4bdc5e2fd9f22d26f2d351 *R/check-input-and-settings.R
 e765e9a4dd4720042576c79e8b57cb28 *R/check-priors-and-models.R
@@ -14,10 +14,10 @@ e42c8f266cdd71304a98335c35aa4e82 *R/stan_tools.R
 33cceb8b7cc1bf4e5d1652ff7874b0b2 *R/stanmodels.R
 e4a23eefe9b8911342abb1ced943bc06 *R/summary.R
 825e9e07e1b53cce9e3aa77836fb4c86 *R/tools.R
-8080f3babd8781d29b215c2adc11aaf5 *R/utilities.R
+60e4eae5a7f4c58e967c96615f4097b1 *R/utilities.R
 13e4e7310d70307a4d2073d39cb9dd24 *R/zzz.R
 58aa6fc0af20119bf801181ec7abb024 *README.md
-7d5fbc4a5e9a114ef558314f3618938a *build/partial.rdb
+ff904d88f5ca1b4d4609aae1221ec71e *build/partial.rdb
 fec2f8b10aceb56fddf954895bcde6a9 *build/vignette.rds
 1cc60bdd8610449d30184e0bb374bf46 *configure
 363506993327ae3b7de4216fa3a1aa2b *configure.win
@@ -27,7 +27,7 @@ e724ea72494d77604c12e81486013eae *inst/REFERENCES.bib
 bb4253fc50b5772dcbafae0756498e0b *inst/apa.csl
 22afda6105db2d16813c2de7bf1f10d9 *inst/doc/Introduction_to_RoBTT.R
 69de99c69750a250b9629aba2b3287e1 *inst/doc/Introduction_to_RoBTT.Rmd
-38f91b2b76888feb1597cc925ff2d4f3 *inst/doc/Introduction_to_RoBTT.html
+248ebeb791a5cae5104109540311f2b1 *inst/doc/Introduction_to_RoBTT.html
 855c064dbf8deaff96c8dc8a87169109 *inst/include/stan_meta_header.hpp
 6c1156b2d0f24b0d2ff07db85e4c9549 *inst/stan/beta.stan
 00264a4febd721eca6fe4bfa120e80a6 *inst/stan/gamma.stan
