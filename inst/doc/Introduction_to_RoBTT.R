@@ -30,8 +30,8 @@ print_conditional <- function(fit, coef = "delta"){
 #    x2       = fertilization$Crossed,
 #    parallel = TRUE,
 #    prior_delta = prior("cauchy", list(0, 1/sqrt(2))),
-#    prior_rho   = NULL, #this indicates no prior on the variance allocation factor -> equal variance test
-#    likelihood  = "normal",
+#    prior_rho   = NULL, # this indicates no prior on the variance allocation factor -> equal variance test
+#    prior_nu    = NULL, # this indicates no prior on the degrees of freedom -> normal distribution test
 #    seed        = 0
 #  )
 #  fit_10 <- RoBTT(
@@ -40,8 +40,8 @@ print_conditional <- function(fit, coef = "delta"){
 #    parallel = TRUE,
 #    prior_delta    = prior("cauchy", list(0, 1/sqrt(2))),
 #    prior_rho      = prior("beta",   list(3, 3)), #prior on variance allocation
-#    prior_rho_null = NULL, #remove models assuming equal variance
-#    likelihood     = "normal",
+#    prior_rho_null = NULL, # remove models assuming equal variance
+#    prior_nu       = NULL,
 #    seed           = 0
 #  )
 #  fit_1 <- RoBTT(
@@ -50,7 +50,7 @@ print_conditional <- function(fit, coef = "delta"){
 #    parallel = TRUE,
 #    prior_delta = prior("cauchy", list(0, 1/sqrt(2))),
 #    prior_rho   = prior("beta",   list(3, 3)),
-#    likelihood  = "normal",
+#    prior_nu    = NULL,
 #    seed        = 1,
 #    control     = set_control(adapt_delta = 0.95)
 #  )
@@ -61,7 +61,6 @@ print_conditional <- function(fit, coef = "delta"){
 #    prior_delta = prior("cauchy", list(0, 1/sqrt(2))),
 #    prior_rho   = prior("beta",   list(3, 3)),
 #    prior_nu    = prior("exp",    list(1)), # prior on degrees of freedom
-#    likelihood  = c("normal", "t"), #use both normal and t-likelihoods
 #    seed        = 2
 #  )
 #  fit_3 <- RoBTT(
@@ -72,7 +71,6 @@ print_conditional <- function(fit, coef = "delta"){
 #    prior_rho        = prior("beta",   list(3, 3)),
 #    prior_nu         = prior("exp",    list(1)),
 #    prior_delta_null = prior("normal", list(0, 0.15), list(0, Inf)), #prior distribution and truncation
-#    likelihood       = c("normal", "t"),
 #    seed             = 3
 #  )
 #  
