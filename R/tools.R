@@ -76,8 +76,19 @@ check_RoBTT <- function(fit){
   
   return(c(short_warnings, short_errors, conv_warning))
 }
-.get_model_convergence       <- function(object){
-  return(sapply(object[["models"]], function(model) if(is.null(model[["converged"]])) FALSE else model[["converged"]]))
+.truncation_footnote         <- function(object){
+  if(!is.null(attr(object[["data"]], "n_truncated")) && attr(object[["data"]], "n_truncated") > 0){
+    return(paste0(attr(object[["data"]], "n_truncated"), " observations were truncated."))
+  }else{
+    return(NULL)
+  }
+}
+.get_model_convergence       <- function(object, include_warning = FALSE){
+  if(include_warning){
+    return(sapply(object[["models"]], function(model) if(is.null(model[["converged"]])) FALSE else model[["converged"]] && is.null(model[["warnings"]])))    
+  }else{
+    return(sapply(object[["models"]], function(model) if(is.null(model[["converged"]])) FALSE else model[["converged"]]))
+  }
 }
 .get_model_warnings          <- function(object){
   return(unlist(sapply(seq_along(object[["models"]]), function(i){
@@ -108,6 +119,16 @@ check_RoBTT <- function(fit){
   constant <- all(constant)
   
   return(constant)
+}
+.get_distributions <- function(object){
+  
+  distributions <- sapply(object[["models"]], function(m) m[["likelihood"]])
+  
+  if(!is.null(object$data[["is_trunc"]]) && object$data[["is_trunc"]] == 1){
+    distributions <- paste0("truncated ", distributions)
+  }
+  
+  return(distributions)
 }
 .get_no_support    <- function(models, par){
   
