@@ -12,48 +12,48 @@ if(.Platform$OS.type == "windows"){
 }
 
 ## ----include = FALSE, eval = FALSE--------------------------------------------
-#  # pre-fit all models (easier to update the code on package update)
-#  library(RoBTT)
-#  
-#  set.seed(42)
-#  x1 <- rnorm(100, 0, 1)
-#  x2 <- rnorm(100, 0, 1)
-#  
-#  stats1 <- boxplot.stats(x1)
-#  lower_whisker1 <- stats1$stats[1]
-#  upper_whisker1 <- stats1$stats[5]
-#  
-#  
-#  stats2 <- boxplot.stats(x2)
-#  lower_whisker2 <- stats2$stats[1]
-#  upper_whisker2 <- stats2$stats[5]
-#  
-#  # Exclude outliers based on identified whiskers
-#  x1_filtered <- x1[x1 >= lower_whisker1 & x1 <= upper_whisker1]
-#  x2_filtered <- x2[x2 >= lower_whisker2 & x2 <= upper_whisker2]
-#  
-#  # Define whiskers for truncated likelihood application
-#  whisker1 <- c(lower_whisker1, upper_whisker1)
-#  whisker2 <- c(lower_whisker2, upper_whisker2)
-#  
-#  fit1_trunc <- RoBTT(
-#    x1 = x1_filtered, x2 = x2_filtered,
-#    truncation = list(x1 = whisker1, x2 = whisker2),
-#    seed = 1, parallel = FALSE)
-#  
-#  
-#  cut_off <- c(-2,2)
-#  
-#  x1 <- x1[x1 >= -2 & x1 <= 2]
-#  x2 <- x2[x2 >= -2 & x2 <= 2]
-#  
-#  fit2_trunc  <- RoBTT(
-#    x1 = x1, x2 = x2,
-#    truncation = list(x = cut_off),
-#    seed = 1, parallel = FALSE)
-#  
-#  saveRDS(fit1_trunc, file = "../models/Truncated/fit1_trunc.RDS")
-#  saveRDS(fit2_trunc, file = "../models/Truncated/fit2_trunc.RDS")
+# # pre-fit all models (easier to update the code on package update)
+# library(RoBTT)
+# 
+# set.seed(42)
+# x1 <- rnorm(100, 0, 1)
+# x2 <- rnorm(100, 0, 1)
+# 
+# stats1 <- boxplot.stats(x1)
+# lower_whisker1 <- stats1$stats[1]
+# upper_whisker1 <- stats1$stats[5]
+# 
+# 
+# stats2 <- boxplot.stats(x2)
+# lower_whisker2 <- stats2$stats[1]
+# upper_whisker2 <- stats2$stats[5]
+# 
+# # Exclude outliers based on identified whiskers
+# x1_filtered <- x1[x1 >= lower_whisker1 & x1 <= upper_whisker1]
+# x2_filtered <- x2[x2 >= lower_whisker2 & x2 <= upper_whisker2]
+# 
+# # Define whiskers for truncated likelihood application
+# whisker1 <- c(lower_whisker1, upper_whisker1)
+# whisker2 <- c(lower_whisker2, upper_whisker2)
+# 
+# fit1_trunc <- RoBTT(
+#   x1 = x1_filtered, x2 = x2_filtered,
+#   truncation = list(x1 = whisker1, x2 = whisker2),
+#   seed = 1, parallel = FALSE)
+# 
+# 
+# cut_off <- c(-2,2)
+# 
+# x1 <- x1[x1 >= -2 & x1 <= 2]
+# x2 <- x2[x2 >= -2 & x2 <= 2]
+# 
+# fit2_trunc  <- RoBTT(
+#   x1 = x1, x2 = x2,
+#   truncation = list(x = cut_off),
+#   seed = 1, parallel = FALSE)
+# 
+# saveRDS(fit1_trunc, file = "../models/Truncated/fit1_trunc.RDS")
+# saveRDS(fit2_trunc, file = "../models/Truncated/fit2_trunc.RDS")
 
 ## ----include = FALSE----------------------------------------------------------
 # pre-load the fitted models to save time on compilation

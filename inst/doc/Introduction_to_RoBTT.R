@@ -20,65 +20,65 @@ print_conditional <- function(fit, coef = "delta"){
 } 
 
 ## ----include = FALSE, eval = FALSE--------------------------------------------
-#  # pre-fit all models (easier to update the code on package update)
-#  library(RoBTT)
-#  
-#  data("fertilization", package = "RoBTT")
-#  
-#  fit_01 <- RoBTT(
-#    x1       = fertilization$Self,
-#    x2       = fertilization$Crossed,
-#    parallel = TRUE,
-#    prior_delta = prior("cauchy", list(0, 1/sqrt(2))),
-#    prior_rho   = NULL, # this indicates no prior on the variance allocation factor -> equal variance test
-#    prior_nu    = NULL, # this indicates no prior on the degrees of freedom -> normal distribution test
-#    seed        = 0
-#  )
-#  fit_10 <- RoBTT(
-#    x1       = fertilization$Self,
-#    x2       = fertilization$Crossed,
-#    parallel = TRUE,
-#    prior_delta    = prior("cauchy", list(0, 1/sqrt(2))),
-#    prior_rho      = prior("beta",   list(3, 3)), #prior on variance allocation
-#    prior_rho_null = NULL, # remove models assuming equal variance
-#    prior_nu       = NULL,
-#    seed           = 0
-#  )
-#  fit_1 <- RoBTT(
-#    x1       = fertilization$Self,
-#    x2       = fertilization$Crossed,
-#    parallel = TRUE,
-#    prior_delta = prior("cauchy", list(0, 1/sqrt(2))),
-#    prior_rho   = prior("beta",   list(3, 3)),
-#    prior_nu    = NULL,
-#    seed        = 1,
-#    control     = set_control(adapt_delta = 0.95)
-#  )
-#  fit_2 <- RoBTT(
-#    x1       = fertilization$Self,
-#    x2       = fertilization$Crossed,
-#    parallel = TRUE,
-#    prior_delta = prior("cauchy", list(0, 1/sqrt(2))),
-#    prior_rho   = prior("beta",   list(3, 3)),
-#    prior_nu    = prior("exp",    list(1)), # prior on degrees of freedom
-#    seed        = 2
-#  )
-#  fit_3 <- RoBTT(
-#    x1       = fertilization$Self,
-#    x2       = fertilization$Crossed,
-#    parallel = TRUE,
-#    prior_delta      = prior("cauchy", list(0, 1/sqrt(2)), list(0, Inf)),
-#    prior_rho        = prior("beta",   list(3, 3)),
-#    prior_nu         = prior("exp",    list(1)),
-#    prior_delta_null = prior("normal", list(0, 0.15), list(0, Inf)), #prior distribution and truncation
-#    seed             = 3
-#  )
-#  
-#  saveRDS(fit_01, file = "../models/Introduction/fit_01.RDS")
-#  saveRDS(fit_10, file = "../models/Introduction/fit_10.RDS")
-#  saveRDS(fit_1,  file = "../models/Introduction/fit_1.RDS")
-#  saveRDS(fit_2,  file = "../models/Introduction/fit_2.RDS")
-#  saveRDS(fit_3,  file = "../models/Introduction/fit_3.RDS")
+# # pre-fit all models (easier to update the code on package update)
+# library(RoBTT)
+# 
+# data("fertilization", package = "RoBTT")
+# 
+# fit_01 <- RoBTT(
+#   x1       = fertilization$Self,
+#   x2       = fertilization$Crossed,
+#   parallel = TRUE,
+#   prior_delta = prior("cauchy", list(0, 1/sqrt(2))),
+#   prior_rho   = NULL, # this indicates no prior on the variance allocation factor -> equal variance test
+#   prior_nu    = NULL, # this indicates no prior on the degrees of freedom -> normal distribution test
+#   seed        = 0
+# )
+# fit_10 <- RoBTT(
+#   x1       = fertilization$Self,
+#   x2       = fertilization$Crossed,
+#   parallel = TRUE,
+#   prior_delta    = prior("cauchy", list(0, 1/sqrt(2))),
+#   prior_rho      = prior("beta",   list(3, 3)), #prior on variance allocation
+#   prior_rho_null = NULL, # remove models assuming equal variance
+#   prior_nu       = NULL,
+#   seed           = 0
+# )
+# fit_1 <- RoBTT(
+#   x1       = fertilization$Self,
+#   x2       = fertilization$Crossed,
+#   parallel = TRUE,
+#   prior_delta = prior("cauchy", list(0, 1/sqrt(2))),
+#   prior_rho   = prior("beta",   list(3, 3)),
+#   prior_nu    = NULL,
+#   seed        = 1,
+#   control     = set_control(adapt_delta = 0.95)
+# )
+# fit_2 <- RoBTT(
+#   x1       = fertilization$Self,
+#   x2       = fertilization$Crossed,
+#   parallel = TRUE,
+#   prior_delta = prior("cauchy", list(0, 1/sqrt(2))),
+#   prior_rho   = prior("beta",   list(3, 3)),
+#   prior_nu    = prior("exp",    list(1)), # prior on degrees of freedom
+#   seed        = 2
+# )
+# fit_3 <- RoBTT(
+#   x1       = fertilization$Self,
+#   x2       = fertilization$Crossed,
+#   parallel = TRUE,
+#   prior_delta      = prior("cauchy", list(0, 1/sqrt(2)), list(0, Inf)),
+#   prior_rho        = prior("beta",   list(3, 3)),
+#   prior_nu         = prior("exp",    list(1)),
+#   prior_delta_null = prior("normal", list(0, 0.15), list(0, Inf)), #prior distribution and truncation
+#   seed             = 3
+# )
+# 
+# saveRDS(fit_01, file = "../models/Introduction/fit_01.RDS")
+# saveRDS(fit_10, file = "../models/Introduction/fit_10.RDS")
+# saveRDS(fit_1,  file = "../models/Introduction/fit_1.RDS")
+# saveRDS(fit_2,  file = "../models/Introduction/fit_2.RDS")
+# saveRDS(fit_3,  file = "../models/Introduction/fit_3.RDS")
 
 ## ----include = FALSE----------------------------------------------------------
 # pre-load the fitted models to save time on compilation

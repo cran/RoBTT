@@ -12,7 +12,7 @@
 
 <meta name="author" content="Henrik R. Godmann &amp; František Bartoš" />
 
-<meta name="date" content="2024-11-09" />
+<meta name="date" content="2026-11-04" />
 
 <title>Truncated Bayesian Model-Averaged T-Test</title>
 
@@ -50,8 +50,9 @@ overflow: visible;
 }
 </style>
 <style type="text/css" data-origin="pandoc">
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -62,7 +63,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
 { counter-reset: source-line 0; }
@@ -145,6 +146,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; }
 
 
 
+<style type="text/css">
+
+div.csl-bib-body { }
+div.csl-entry {
+clear: both;
+margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+margin-left:2em;
+text-indent:-2em;
+}
+div.csl-left-margin {
+min-width:2em;
+float:left;
+}
+div.csl-right-inline {
+margin-left:2em;
+padding-left:1em;
+}
+div.csl-indent {
+margin-left: 2em;
+}
+</style>
 
 <style type="text/css">body {
 background-color: #fff;
@@ -341,7 +365,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <h1 class="title toc-ignore">Truncated Bayesian Model-Averaged
 T-Test</h1>
 <h4 class="author">Henrik R. Godmann &amp; František Bartoš</h4>
-<h4 class="date">2024-11-09</h4>
+<h4 class="date">2026-11-04</h4>
 
 
 
@@ -351,9 +375,9 @@ T-Test</h1>
 <h2>Introduction</h2>
 <p>This vignettes accompanies our recent manuscript ‘’Truncating the
 Likelihood Allows Outlier Exclusion Without Overestimating the Evidence
-in the Bayes Factor t-Test’’ <span class="citation">(<strong>godmann2024TruncLikelihood?</strong>)</span>
-and shows how to use the <code>RoBTT</code> R package to estimate a
-truncated Bayesian model-averaged independent samples <span class="math inline">\(t\)</span>-test (TrBTT). TrBTT adapts the t-test
+in the Bayes Factor t-Test’’ <span class="citation">(Godmann et al.,
+2024)</span> and shows how to use the <code>RoBTT</code> R package to
+estimate a truncated Bayesian model-averaged independent samples <span class="math inline">\(t\)</span>-test (TrBTT). TrBTT adapts the t-test
 to researchers’ outlier handling and thus mitigates the unwanted side
 effects of outlier exclusion on the inferences. For a general
 introduction to the RoBTT package, see the <a href="https://fbartos.github.io/RoBTT/articles/Introduction_to_RoBTT.html">Introduction
@@ -458,15 +482,15 @@ function.</p>
 <span id="cb5-11"><a href="#cb5-11" tabindex="-1"></a><span class="co">#&gt; </span></span>
 <span id="cb5-12"><a href="#cb5-12" tabindex="-1"></a><span class="co">#&gt; Model-averaged estimates:</span></span>
 <span id="cb5-13"><a href="#cb5-13" tabindex="-1"></a><span class="co">#&gt;         Mean Median  0.025 0.975</span></span>
-<span id="cb5-14"><a href="#cb5-14" tabindex="-1"></a><span class="co">#&gt; delta -0.070  0.000 -0.442 0.008</span></span>
-<span id="cb5-15"><a href="#cb5-15" tabindex="-1"></a><span class="co">#&gt; rho    0.498  0.500  0.406 0.574</span></span>
+<span id="cb5-14"><a href="#cb5-14" tabindex="-1"></a><span class="co">#&gt; delta -0.070  0.000 -0.441 0.009</span></span>
+<span id="cb5-15"><a href="#cb5-15" tabindex="-1"></a><span class="co">#&gt; rho    0.498  0.500  0.407 0.573</span></span>
 <span id="cb5-16"><a href="#cb5-16" tabindex="-1"></a><span class="co">#&gt; </span></span>
 <span id="cb5-17"><a href="#cb5-17" tabindex="-1"></a><span class="co">#&gt; Model-averaged group parameter estimates:</span></span>
 <span id="cb5-18"><a href="#cb5-18" tabindex="-1"></a><span class="co">#&gt;            Mean Median  0.025 0.975</span></span>
 <span id="cb5-19"><a href="#cb5-19" tabindex="-1"></a><span class="co">#&gt; mu[1]     0.041  0.034 -0.151 0.278</span></span>
 <span id="cb5-20"><a href="#cb5-20" tabindex="-1"></a><span class="co">#&gt; mu[2]    -0.031 -0.022 -0.290 0.169</span></span>
-<span id="cb5-21"><a href="#cb5-21" tabindex="-1"></a><span class="co">#&gt; sigma[1]  1.055  1.047  0.906 1.258</span></span>
-<span id="cb5-22"><a href="#cb5-22" tabindex="-1"></a><span class="co">#&gt; sigma[2]  1.052  1.043  0.887 1.270</span></span></code></pre></div>
+<span id="cb5-21"><a href="#cb5-21" tabindex="-1"></a><span class="co">#&gt; sigma[1]  1.055  1.047  0.905 1.256</span></span>
+<span id="cb5-22"><a href="#cb5-22" tabindex="-1"></a><span class="co">#&gt; sigma[2]  1.052  1.043  0.887 1.269</span></span></code></pre></div>
 <p>The printed output is structured into three sections. First, the
 <code>Components summary</code> table which contains the inclusion Bayes
 factor for the presence of an effect and heterogeneity computed using
@@ -549,9 +573,18 @@ deviations per group.</p>
 <h2>Conclusions</h2>
 <p>This vignette demonstrated outlier handling with truncated Bayesian
 model-averaged t-test implemented in the <code>RoBTT</code> R package.
-For methodological background see <span class="citation">(<strong>godmann2024TruncLikelihood?</strong>)</span>.</p>
-<div id="references" class="section level3">
-<h3>References</h3>
+For methodological background see <span class="citation">Godmann et al.
+(2024)</span>.</p>
+<div id="references" class="section level3 unnumbered">
+<h3 class="unnumbered">References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0" line-spacing="2">
+<div id="ref-godmann2024how" class="csl-entry">
+Godmann, H. R., Bartoš, F., &amp; Wagenmakers, E.-J. (2024).
+<em>Truncating the likelihood allows outlier exclusion without
+overestimating the evidence in the <span>B</span>ayes factor
+t-test</em>. <a href="https://doi.org/10.31234/osf.io/j9f3s">https://doi.org/10.31234/osf.io/j9f3s</a>
+</div>
+</div>
 </div>
 </div>
 </div>
